@@ -22,11 +22,16 @@ async function fetchdata() {
 async function renderHTml() {
     const featured = await fetchdata();
     featured.innerHTML = '';
-    
+
+    for(let count = 0; count <= featured.length; count++) {
         featured.innerHTML += `
         <img src ="${featured.image}"alt ="featured flower">
         
         `
+    if (count ==0) break;    
+    }
+    
+        
     }
 
 
