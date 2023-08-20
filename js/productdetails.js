@@ -26,7 +26,7 @@ async function renderHTml() {
         <p> ${data.Price}</p>   
     </div>
     <div>
-        <img src ="${data.image}" alt="">
+        <img src ="${product.image[0]?.src}" alt="${product.name??'product Image'}">
     </div>    
     `
     document.title = 'product_details';

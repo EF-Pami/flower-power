@@ -25,7 +25,7 @@ async function renderHTml() {
     flowers_block.innerHTML = ``;
     products.forEach(function (element, index) {
         flowers_block.innerHTML += `
-        <a href="productdetails.html?id=${element.id}"><img src ="${element.images}"alt ="flowers"></a>
+        <a href="productdetails.html?id=${element.id}"><img src ="${products.image[0]?.src}" alt="${products.name??'product Image'}"></a>
         
         `
     })
